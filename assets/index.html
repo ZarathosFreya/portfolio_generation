@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio">
+    <meta name="author" content="Andressa Neves Morais de Souza">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="./img/favicon.svg"  />
+    <title>Portfólio da Andressa</title>
+</head>
+<body>
+    <!--Cabeçalho da Página-->
+    <header>
+
+        <div id="header_content">
+            <!--Título do Cabeçalho-->
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
+
+            <!--Menu-->
+            <div id="menu">
+                <nav>
+                    <!--Marcadores não Ordenados-->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Seção Principal da Página-->
+    <main>
+
+        <section id="home">
+
+            <article id="home_texto">
+
+                <h4> Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto doloribus, veritatis distinctio magni libero quod illum, autem perferendis ipsam quaerat vel mollitia! Soluta dolores eveniet omnis cum illum in!</p>
+                <a 
+                    href="https://github.com/ZarathosFreya" 
+                    target="_blank"
+                >
+                    Explorar
+                </a>
+
+            </article>
+
+            <article id="home_imagem">
+                <img
+                    src="./img/astronauta.svg" 
+                    alt="Capacete de Astronauta Animado"
+                >
+            </article>
+
+        </section>
+
+        <section id="about">
+
+            <img
+                    src="./img/user_02.svg" 
+                    alt="Foto do Perfil do GitHub"
+            >
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore consectetur laboriosam qui amet voluptates eius dolores architecto, ad, quidem accusamus laborum maiores, odio quod commodi quam debitis officia quo.</p>
+
+                <div id="about_github">
+                    <a
+                        href="https://github.com/ZarathosFreya" 
+                        target="_blank"
+                >
+                    GitHub
+                    </a>
+                    <p>200 Seguidores</p>
+                    <p>20 Repositórios</p>
+
+                </div>
+            </article>
+
+        </section>
+
+        <section id="contact">
+
+            <h4>Contate-me</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rem. Suscipit excepturi ad similique ipsa, atque fuga consectetur tenetur ut, numquam dicta aspernatur sed ipsum possimus doloremque sunt, facere veritatis!</p>
+
+            <div id="icone_redes_sociais">
+                <a href="" target="=_blank">
+                    <img src="./img/linkedin.svg"
+                    alt="Logo do Linkedin"
+                >
+                </a>
+                <a href="" target="=_blank">
+                    <img src="./img/github.svg"
+                    alt="Logo do GitHub"
+                >
+                </a>
+                <a href="" target="=_blank">
+                    <img src="./img/instagram.svg"
+                    alt="Logo do Instagram"
+                >
+                </a>
+            </div>
+
+            <form action="" method="POST">
+                <label for="nome">Nome</label>
+                <input 
+                id="nome" 
+                type="text" 
+                name="nome"
+                placeholder="Digite o seu nome"
+            >
+            <span id="txtNome"></span>
+
+            <label for="email">E-mail</label>
+                <input 
+                id="email" 
+                type="text" 
+                name="email"
+                placeholder="Digite o endereço do seu e-mail"
+            >
+            <span id="txtEmail"></span>
+
+            <label for="assunto">Assunto</label>
+                <input 
+                id="assunto" 
+                type="text" 
+                name="assunto"
+                placeholder="Digite o assunto da mensagem"
+            >
+            <span id="txtAssunto"></span>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Digite a sua mensagem"
+            >
+            </textarea>
+
+            <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Rodapé da Página-->
+    <footer>
+        Feito com 🧡 por Andressa Neves (❁´◡`❁) - 2025
+    </footer>
+</body>
+</html>
