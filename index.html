@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Andressa Neves Morais de Souza">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./img/favicon.svg"  />
+    <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!--Link para a Folha de Estilos CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Portfólio da Andressa</title>
 </head>
+
 <body>
     <!--Cabeçalho da Página-->
-    <header>
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
             <!--Título do Cabeçalho-->
             <div id="titulo">
                 <a href="#">Universo</a>
             </div>
 
             <!--Menu-->
-            <div id="menu">
+            <div id="menu" class="flex">
                 <nav>
                     <!--Marcadores não Ordenados-->
-                    <ul>
+                    <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contato</a></li>
@@ -37,47 +51,47 @@
     <!--Seção Principal da Página-->
     <main>
 
-        <section id="home">
+        <section id="home" class="flex home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
                 <h4> Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto doloribus, veritatis distinctio magni libero quod illum, autem perferendis ipsam quaerat vel mollitia! Soluta dolores eveniet omnis cum illum in!</p>
-                <a 
-                    href="https://github.com/ZarathosFreya" 
-                    target="_blank"
-                >
-                    Explorar
-                </a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto doloribus, veritatis
+                    distinctio magni libero quod illum, autem perferendis ipsam quaerat vel mollitia! Soluta dolores
+                    eveniet omnis cum illum in!</p>
+                    
+                    <a href="https://github.com/ZarathosFreya" target="_blank" class="botao">
+                        Explorar
+                    </a>
 
             </article>
 
-            <article id="home_imagem">
-                <img
-                    src="./img/astronauta.svg" 
-                    alt="Capacete de Astronauta Animado"
-                >
+            <article id="home_imagem" class="home_content">
+                <img 
+                src="./assets/img/astronauta.svg" 
+                alt="Capacete de Astronauta Animado"/>
             </article>
 
         </section>
 
-        <section id="about">
+        <section id="about" class="flex about_container">
 
-            <img
-                    src="./img/user_02.svg" 
-                    alt="Foto do Perfil do GitHub"
+            <article id="home_imagem" class="about_content">
+            <img 
+            src="./assets/img/user_02.svg" 
+            alt="Foto do Perfil do GitHub"
             >
-            <article id="about_texto">
+            </article>
+            <article id="about_texto" class="flex home_content">
                 <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore consectetur laboriosam qui amet voluptates eius dolores architecto, ad, quidem accusamus laborum maiores, odio quod commodi quam debitis officia quo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore consectetur laboriosam qui
+                    amet voluptates eius dolores architecto, ad, quidem accusamus laborum maiores, odio quod commodi
+                    quam debitis officia quo.</p>
 
                 <div id="about_github">
-                    <a
-                        href="https://github.com/ZarathosFreya" 
-                        target="_blank"
-                >
-                    GitHub
+                    <a href="https://github.com/ZarathosFreya" target="_blank" class="botao">
+                        GitHub
                     </a>
                     <p>200 Seguidores</p>
                     <p>20 Repositórios</p>
@@ -90,63 +104,40 @@
         <section id="contact">
 
             <h4>Contate-me</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rem. Suscipit excepturi ad similique ipsa, atque fuga consectetur tenetur ut, numquam dicta aspernatur sed ipsum possimus doloremque sunt, facere veritatis!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rem. Suscipit excepturi ad
+                similique ipsa, atque fuga consectetur tenetur ut, numquam dicta aspernatur sed ipsum possimus
+                doloremque sunt, facere veritatis!</p>
 
             <div id="icone_redes_sociais">
                 <a href="" target="=_blank">
-                    <img src="./img/linkedin.svg"
-                    alt="Logo do Linkedin"
-                >
+                    <img src="./assets/img/linkedin.svg" alt="Logo do Linkedin">
                 </a>
                 <a href="" target="=_blank">
-                    <img src="./img/github.svg"
-                    alt="Logo do GitHub"
-                >
+                    <img src="./assets/img/github.svg" alt="Logo do GitHub">
                 </a>
                 <a href="" target="=_blank">
-                    <img src="./img/instagram.svg"
-                    alt="Logo do Instagram"
-                >
+                    <img src="./assets/img/instagram.svg" alt="Logo do Instagram">
                 </a>
             </div>
 
             <form action="" method="POST">
                 <label for="nome">Nome</label>
-                <input 
-                id="nome" 
-                type="text" 
-                name="nome"
-                placeholder="Digite o seu nome"
-            >
-            <span id="txtNome"></span>
+                <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
 
-            <label for="email">E-mail</label>
-                <input 
-                id="email" 
-                type="text" 
-                name="email"
-                placeholder="Digite o endereço do seu e-mail"
-            >
-            <span id="txtEmail"></span>
+                <label for="email">E-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite o endereço do seu e-mail">
+                <span id="txtEmail"></span>
 
-            <label for="assunto">Assunto</label>
-                <input 
-                id="assunto" 
-                type="text" 
-                name="assunto"
-                placeholder="Digite o assunto da mensagem"
-            >
-            <span id="txtAssunto"></span>
+                <label for="assunto">Assunto</label>
+                <input id="assunto" type="text" name="assunto" placeholder="Digite o assunto da mensagem">
+                <span id="txtAssunto"></span>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea
-                id="mensagem"
-                name="mensagem"
-                placeholder="Digite a sua mensagem"
-            >
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
             </textarea>
 
-            <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -156,4 +147,5 @@
         Feito com 🧡 por Andressa Neves (❁´◡`❁) - 2025
     </footer>
 </body>
+
 </html>
