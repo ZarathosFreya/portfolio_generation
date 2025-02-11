@@ -41,16 +41,18 @@ a {
 
 .botao{
     text-align: center;
-    padding: 12px 32px;
+    color:var(--purple-800);
+    padding: 0.5rem 2rem;
     background: none;
     border: 1px solid var(--purple-800);
     border-radius: 10px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .botao:hover{
     background-color: var(--purple-800);
-    color: var(--white)
+    color: var(--white);
 }
 
 .flex{
@@ -62,7 +64,7 @@ a {
 /*Estilização - Seção Header*/
 
 .menu_container{
-    height: 80px;
+    height: 5rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -77,12 +79,12 @@ a {
 }
 
 .menu_container a:hover{
-    color:var(--purple-200)
+    color:var(--purple-200);
 }
 
 .menu_content{
     max-width: 1120px;
-    padding: 0 24px;
+    padding: 0 1.5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -97,13 +99,19 @@ a {
     margin-left: 1rem;
 }
 
+#menu_content_sucess{
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 1.5rem;
+}
+
 /*Estilização da Seção Home*/
 
 .home_container{
     max-width: 1120px;
-    margin: 16px auto;
+    margin: 1rem auto;
     padding: 0 1rem;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6.25rem);
 }
 
 .home_container p,
@@ -137,63 +145,319 @@ h4{
 }
 
 .home_content img{
-    display: flex;
     width: 75%;
 }
 
-.footer_container{
-    height: 50px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: var(--purple-800);
-}
+/* Estilização da Seção Home - Página Success */
 
-.footer_content{
-    color: var(--white)
-}
-
-.about_content img{
-    display: flex;
-    width: 65%;
-}
-
-.about_container{
+.home_container_sucess {
+    height: calc(100vh - 12.5rem);
     max-width: 1120px;
-    margin: 16px auto;
+    margin: 1rem auto;
     padding: 0 1rem;
-    height: calc(100vh - 100px);
 }
 
-.about_container p,
-h1,
-h4{
+#home_sucess {
+    width: 50vw;
+    flex-direction: column;
+}
+
+#home_sucess h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#home_sucess h4 {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+/* Estilização da Seção Sobre */
+
+.sobre_container {
+    max-width: 1120px;
+    margin: -1.25rem auto;
+    padding: 0 1rem;
+    height: 100vh;
+}
+
+.sobre_container img {
+    width: 30%;
+    margin: 1rem;
+    border: 5px solid var(--purple-500);
+    border-radius: 50%;
+}
+
+.sobre_container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
     text-align: center;
+}
+
+.sobre_container p {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.sobre_github {
+    justify-content: space-evenly;
+}
+
+#sobre_texto {
+    margin-left: 2rem;
+}
+
+/* Estilização da Seção Contact */
+
+.contato_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 1120px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.contato_container h4{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contato_content{
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+.contato_content p{
+    display: block;
+    text-align: justify;
+}
+
+/* Estilização da Seção Redes Sociais*/
+
+.social_container{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+}
+
+.social_icon{
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+.social_icon:hover{
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(20%) 
+            sepia(24%) 
+            saturate(4557%) 
+            hue-rotate(242deg) 
+            brightness(89%) 
+            contrast(108%);
+}
+
+/* Estilização da Seção Form*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    padding: 1.25rem;
+    border: none;
+}
+
+form label{
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+form input,
+textarea{
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
     font-size: 1rem;
 }
 
-.about_container h1{
-    font-size: 2.05rem;
-    line-height: 3rem;
-    font-weight: 700;
+textarea{
+    resize: none;
 }
 
-.about_container h4{
-    font-weight: 700;
+form span{
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: red;
 }
 
-.about_container p{
-    margin: 1rem 0;
+/* Estilização da Seção Footer */
+
+footer {
+    margin: 0;
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
 }
 
-.about_container .botao{
-    width: 40%;
-}
+/* Modo Responsivo */
 
-#about_texto p{
-    margin-bottom: 2rem;
-}
+/* Smartphone - Telas até 490px */
 
-#about_github p{
-    margin-top: 2rem;
+@media screen and (max-width: 490px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main{
+        display:flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+
+    /* Ajustes no Menu*/
+
+    .menu_container{
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu_content{
+        justify-content: center;
+        max-width: 100%;
+        /* padding: 1rem; */
+    }
+
+    #titulo a{
+        font-size: 1.75rem;
+    }
+
+    .menu_list{
+        display: none;
+    }
+
+    /* Ajustes na Seção Home*/
+
+    .home_container{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .home_content{
+        width: 100%;
+    }
+
+    .home_content h1{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .home_content .botao, img{
+        width: 80%
+    }
+
+    /* .home_content img{
+        width: 80%;
+    } */
+
+    #home_texto{
+        margin-top: 0.5rem;
+    }
+
+    #home_imagem{
+        margin-bottom: 0;
+    }
+
+    /* Ajustes na Seção About*/
+
+    .sobre_container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .sobre_container img{
+        width: 70%;
+    }
+
+    .sobre_container h1{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .sobre_github{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sobre_github p{
+        display: none;
+    }
+
+    .sobre_github .botao{
+        width: 80%;
+    }
+
+    /* Ajustes Contato */
+
+    .contato_container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .contato_content{
+        width: 100%
+    }
+
+    .contato_content h4{
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .contato_content p{
+        margin: 1rem;
+    }
+
+    /* Ajustes da Seção Redes Sociais */
+
+    .social_container{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social_icon{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Ajustes da Seção Form */
+
+    form{
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+    }
 }
