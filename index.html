@@ -15,7 +15,7 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Andressa Neves Morais de Souza">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="icon" href="./assets/img/dev.png" />
 
     <!--Link para a Folha de Estilos CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -67,64 +67,46 @@
 
             </article>
 
-            <!--Imagem da Seção Home-->>
+            <!--Imagem da Seção Home-->
             <article id="home_imagem" class="home_content">
                 <img 
-                src="./assets/img/astronauta.svg" 
+                src="./assets/img/computador.svg" 
                 alt="Capacete de Astronauta Animado"/>
             </article>
 
         </section>
 
-        <!--Seção Sobre-->>
+        <!--Seção Sobre-->
         <section id="about" class="flex about_container">
-
-            <article id="home_imagem" class="about_content">
-            <img 
-            src="./assets/img/user_02.svg" 
-            alt="Foto do Perfil do GitHub"
-            >
-            </article>
-            <article id="about_texto" class="flex home_content">
-                <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore consectetur laboriosam qui
-                    amet voluptates eius dolores architecto, ad, quidem accusamus laborum maiores, odio quod commodi
-                    quam debitis officia quo.</p>
-
-                <div id="about_github" class="flex sobre_github">
-                    <a href="https://github.com/ZarathosFreya" target="_blank" class="botao">
-                        GitHub
-                    </a>
-                    <p>200 Seguidores</p>
-                    <p>20 Repositórios</p>
-
-                </div>
-            </article>
 
         </section>
 
-        <!--Seção de Contato-->>
-        <section id="contact" class="contato_container">
-
+        <!--Seção de Contato-->
+        <section id="contact" class="flex contato_container">
+        <article class="contato_content">
             <h4>Contate-me</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rem. Suscipit excepturi ad
                 similique ipsa, atque fuga consectetur tenetur ut, numquam dicta aspernatur sed ipsum possimus
                 doloremque sunt, facere veritatis!</p>
 
             <div id="icone_redes_sociais" class="social_container">
-                <a href="" target="=_blank">
+                <a class="social_icon" href="https://www.linkedin.com/in/andressa-neves-2b6641221/" target="=_blank">
                     <img src="./assets/img/linkedin.svg" alt="Logo do Linkedin">
                 </a>
-                <a href="" target="=_blank">
+                <a class="social_icon" href="https://github.com/ZarathosFreya/" target="=_blank">
                     <img src="./assets/img/github.svg" alt="Logo do GitHub">
                 </a>
-                <a href="" target="=_blank">
+                <a class="social_icon" href="https://www.instagram.com/" target="=_blank">
                     <img src="./assets/img/instagram.svg" alt="Logo do Instagram">
                 </a>
             </div>
+        </article>
+            <!--Formulário de Contato-->
+            <form action="https://formsubmit.co/57f0befffd09966390c9ea408ad2e11a" method="POST" id="formulario">
 
-            <!--Formulário de Contato-->>
-            <form action="" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
@@ -141,7 +123,7 @@
                 <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
             </textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
         </section>
     </main>
@@ -150,6 +132,10 @@
     <footer>
         Feito com 🧡 por Andressa Neves (❁´◡`❁) - 2025
     </footer>
+
+    <!--Script JavaScript-->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

@@ -12,6 +12,8 @@
     --purple-200: #9a7bd1;
     --purple-500: #6b36c8;
     --purple-800: #441f88;
+
+    --orange:#F2753F;
  
     --gray-200: #cccccc;
     --gray-400: #505861;
@@ -148,6 +150,82 @@ h4{
     width: 75%;
 }
 
+.footer_container{
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--purple-800);
+}
+
+.footer_content{
+    color: var(--white)
+}
+
+.about_content{
+    flex-direction: column;
+    text-align: center;
+}
+
+.about_content img{
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 100%;
+    border: 5px solid var(--white);
+}
+
+.about_container{
+    max-width: 1120px;
+    margin: 16px auto;
+    padding: 0 1rem;
+    height: calc(100vh - 100px);
+    gap: 1.5rem;
+}
+
+.about_container p,
+h1,
+h4{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about_container h1{
+    font-size: 2.05rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.about_container h4{
+    font-weight: 700;
+}
+
+.about_container p{
+    margin: 1rem 0;
+}
+
+.about_container .botao{
+    width: 40%;
+}
+
+#about_texto p{
+    margin-bottom: 2rem;
+}
+
+#about_github p{
+    margin-top: 2rem;
+}
+
+.sobre_github {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    flex-direction: row;
+    
+}  
+
 /* Estilização da Seção Home - Página Success */
 
 .home_container_sucess {
@@ -155,6 +233,10 @@ h4{
     max-width: 1120px;
     margin: 1rem auto;
     padding: 0 1rem;
+}
+.home_container_sucess a{
+    justify-content: center;
+    align-items: center;
 }
 
 #home_sucess {
@@ -172,40 +254,37 @@ h4{
     padding: 1rem;
 }
 
+#sucess h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sucess a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
 /* Estilização da Seção Sobre */
 
-.sobre_container {
-    max-width: 1120px;
-    margin: -1.25rem auto;
-    padding: 0 1rem;
-    height: 100vh;
+.sobre_container{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
 }
 
-.sobre_container img {
-    width: 30%;
-    margin: 1rem;
-    border: 5px solid var(--purple-500);
-    border-radius: 50%;
+.sobre_container img{
+    width: 70%;
 }
 
-.sobre_container h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 3rem;
-    text-align: center;
-}
-
-.sobre_container p {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.sobre_github {
-    justify-content: space-evenly;
-}
-
-#sobre_texto {
-    margin-left: 2rem;
+.sobre_container h1{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
 }
 
 /* Estilização da Seção Contact */
@@ -248,18 +327,21 @@ h4{
 
 .social_icon{
     width: 4.75rem;
-    height: 4.75rem;
+    height: auto;
+    display:flex;
+    justify-content: center;
 }
 
 .social_icon:hover{
-    filter: brightness(0) 
-            saturate(100%) 
-            invert(20%) 
-            sepia(24%) 
-            saturate(4557%) 
-            hue-rotate(242deg) 
-            brightness(89%) 
-            contrast(108%);
+    filter: 
+    brightness(0) 
+    saturate(100%) 
+    invert(20%) 
+    sepia(24%) 
+    saturate(4557%) 
+    hue-rotate(330deg) 
+    brightness(89%) 
+    contrast(108%);
 }
 
 /* Estilização da Seção Form*/
@@ -405,20 +487,6 @@ footer {
         font-size: 1.75rem;
         line-height: 2.25rem;
     }
-
-    .sobre_github{
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .sobre_github p{
-        display: none;
-    }
-
-    .sobre_github .botao{
-        width: 80%;
-    }
-
     /* Ajustes Contato */
 
     .contato_container{
